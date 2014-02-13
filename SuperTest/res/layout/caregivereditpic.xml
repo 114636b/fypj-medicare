@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/inbgphoto"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textpicName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tvEditName"
+                android:layout_marginLeft="24dp"
+                android:layout_toRightOf="@+id/tvEditPhone"
+                android:text="Name"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvEditEmail"
+                android:layout_alignBottom="@+id/tvEditEmail"
+                android:layout_alignLeft="@+id/textpicName"
+                android:text="Email"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignTop="@+id/tvEditPhone"
+                android:text="Phone"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/tvEditEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvEditName"
+                android:layout_below="@+id/tvEditName"
+                android:layout_marginTop="18dp"
+                android:text="Email"
+                 android:typeface="serif" 
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tvEditNRIC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txtNRICProfile"
+                android:layout_alignBottom="@+id/txtNRICProfile"
+                android:layout_alignLeft="@+id/tvEditPhone"
+                android:text="NRIC"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:typeface="serif"  />
+
+            <TextView
+                android:id="@+id/txtNRICProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView3"
+                android:layout_below="@+id/tvEditPhone"
+                android:layout_marginTop="16dp"
+                android:text="-----" />
+
+            <TextView
+                android:id="@+id/tvEditPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvEditEmail"
+                android:layout_below="@+id/tvEditEmail"
+                android:layout_marginTop="17dp"
+                android:text="Phone"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:typeface="serif"  />
+
+            <ImageView
+                android:id="@+id/imgEditProfile"
+                android:layout_width="300dp"
+                android:layout_height="120dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="73dp"
+                android:src="@drawable/cameraicon" />
+
+            <TextView
+                android:id="@+id/tvEditName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imgEditProfile"
+                android:layout_below="@+id/imgEditProfile"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="32dp"
+                android:text="Name"
+                android:textAppearance="?android:attr/textAppearanceMedium" 
+                 android:typeface="serif" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnEditPic"
+                style="@style/btnStyleSeagull"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="Edit Picture" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/imgbg" >
+    
+<Button android:layout_height="wrap_content"
+			android:layout_width="match_parent" android:id="@+id/UpdateList"
+			android:layout_margin="2dip"
+			android:text="Update SMS list" />
+	
+	<ListView android:id="@+id/SMSList" 
+			android:layout_height="wrap_content" 
+			android:layout_width="match_parent" 
+			android:layout_margin="2dip" />
+
+</LinearLayout>

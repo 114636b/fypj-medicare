@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/inbgprofile"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvEditNRIC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvEditName"
+                android:layout_alignParentBottom="true"
+                android:text="NRIC"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:typeface="serif"  />
+
+            <EditText
+                android:id="@+id/etxtPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvEditPhone"
+                android:layout_alignBottom="@+id/tvEditPhone"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@+id/tvEditPhone"
+                android:ems="10"
+                android:inputType="phone"
+                android:singleLine="true">
+
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/txtNRICProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvEditNRIC"
+                android:layout_alignBottom="@+id/tvEditNRIC"
+                android:layout_alignLeft="@+id/etxtPhone"
+                android:text="THIS IS NRIC FIELD FROM SESSION" />
+
+            <EditText
+                android:id="@+id/etxtEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvEditEmail"
+                android:layout_alignBottom="@+id/tvEditEmail"
+                android:layout_alignLeft="@+id/etxtPhone"
+                android:ems="10"
+                android:singleLine="true"
+                android:inputType="textEmailAddress" >
+
+                
+            </EditText>
+
+            <EditText
+                android:id="@+id/etxtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvEditName"
+                android:layout_alignBottom="@+id/tvEditName"
+                android:layout_alignLeft="@+id/etxtEmail"
+                android:singleLine="true"
+                android:ems="10" />
+
+            <TextView
+                android:id="@+id/tvEditPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tvEditNRIC"
+                android:layout_alignLeft="@+id/tvEditNRIC"
+                android:layout_marginBottom="19dp"
+                android:text="Phone"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:typeface="serif"  />
+
+            <TextView
+                android:id="@+id/tvEditEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/etxtPhone"
+                android:layout_alignLeft="@+id/tvEditPhone"
+                android:text="Email"
+                android:textAppearance="?android:attr/textAppearanceMedium" 
+                 android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/tvEditName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/etxtEmail"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@+id/imgEditProfile"
+                android:text="Name"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:typeface="serif"  />
+
+            <ImageView
+                android:id="@+id/imgEditProfile"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_above="@+id/etxtName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="18dp"
+                android:src="@drawable/profile" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnEditPic"
+                style="@style/btnStyleSeagull"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="Update Profile" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

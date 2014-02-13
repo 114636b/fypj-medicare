@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/inbg"
+    >
+    <TextView  
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:text="Enter the phone number of recipient"
+        android:textSize="20dp"
+        />     
+    <EditText 
+        android:id="@+id/txtPhoneNo"  
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"        
+        />
+    <TextView  
+        android:id="@+id/txtMsg" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"         
+        android:text="Message"
+                android:textSize="20dp"
+        
+        />
+
+    <EditText
+        android:id="@+id/txtMessage"
+        android:layout_width="fill_parent"
+        android:layout_height="78dp"
+        android:gravity="top" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnSendSMS"
+            style="@style/btnStyleSeagull"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Send SMS"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/btnCall"
+            style="@style/btnStyleSeagull"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="Make Call"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSendSMS"
+            android:layout_centerHorizontal="true"
+            android:text="Caregiver&apos;s Message"
+            android:textSize="25dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </RelativeLayout>
+	
+	<ListView android:id="@+id/SMSList" 
+			android:layout_height="wrap_content" 
+			android:layout_width="match_parent" 
+			android:layout_margin="2dip" />
+
+</LinearLayout>
